@@ -5,7 +5,7 @@ if ($_GET["action"] == "set")
 }
 if ($_GET["action"] == "get")
 {
-	if ($_COOKIE[$_GET["name"]])
+	if ($_COOKIE[$_GET["name"]] == TRUE)
 	{
 		echo $_COOKIE[$_GET["name"]]."\n";
 	}
